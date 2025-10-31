@@ -14,24 +14,6 @@ body {
     padding: 20px;
   }
   
-  header img.foto-perfil {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 10px;
-  }
-  
-  header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-  }
-  
-  header p {
-    font-size: 1rem;
-    margin-top: 0;
-  }
-
   nav ul.menu {
     list-style: none;
     padding: 0;
@@ -75,7 +57,7 @@ body {
   }
 
   footer {
-    background-color: #b4f0d6;
+    background-color: #6a927f;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 15px;
@@ -108,3 +90,110 @@ body {
       align-items: center;
     }
   }
+
+  .foto-profissional {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #04533f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .foto-profissional:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c5545;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center; 
+  filter: brightness(65%);
+  transition: transform 0.8s ease;
+}
+
+.banner:hover .banner-img {
+  transform: scale(1.03);
+}
+
+.banner-texto {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.banner-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-texto p {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+#curiosidade {
+  background-color: #ccf0e5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#curiosidade h2 {
+  color: #1c4638;
+}
+
+#entrevista {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#entrevista h2 {
+  color: #2c5545;
+  text-align: center;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.pergunta {
+  margin-bottom: 25px;
+  background-color: #c5d8ce;
+  padding: 15px 20px;
+  border-left: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.pergunta h3 {
+  margin-top: 0;
+  color: #1c4638;
+  margin-bottom: 8px;
+}
+
+.pergunta p {
+  margin: 0;
+  text-align: justify;
+}
